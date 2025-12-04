@@ -608,7 +608,12 @@ object-fit:fill;
 .slider-track img {
     width: 200px;
     height: 120px;
+
 }
+.skills .skills-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -616,6 +621,9 @@ object-fit:fill;
     width: 250px;
     height: 150px;
 }
+.skills .skills-content .left .text{
+        font-size: 19px;
+    }
 }
 
 
