@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/coder.png">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/30e245d598.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Header  Profile-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="assets/images/coder.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#others-skills">Others Skills</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <h1>Position</h1> -->
+                <h2>Hi, I'm <span>Raden</span> <br> Bengala From Philippines </h3>
+                <h3>I am  <span class="typing"></span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/Me.png" height="400"  alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a dedicated and passionate professional, committed to achieving my goals and excelling in my responsibilities. I approach tasks with a strong work ethic and a proactive mindset, ensuring they are completed efficiently and effectively. I am open to learning and willing to undergo training to enhance my skills and adapt to new challenges. With proper guidance and support, I can quickly acclimate to any work environment, consistently delivering quality results.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <div class="tab-img"><img src="assets/images/front-end.jpg" alt="user"></div>
+                                <span>Front-End Development</span><br>
+                                I specialize in front-end development using HTML, CSS, and the Bootstrap framework. I start my projects by creating wireframes to plan the design and layout, ensuring the websites I build are responsive, user-friendly, and visually appealing.
+                            </li>
+                            <li>
+                                <div class="tab-img"><img src="assets/images/back-end.jpg" alt="user"></div>
+                                <span>Back-End Development</span><br>
+                                Back-End Development, I design the logic for system operations and develop functions for each module I create. I also use flowcharts to map out Back-End processes, ensuring a clear understanding of how each function works and integrates into the system.
+                            </li>
+                            <!-- <li><span>App Developer</span><br>Building Andriod/iOS apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <h4>SPIDC</h4>
+                                <span>.Net Programmer</span>
+                                <div class="text-right"><b>October to August 2024</b></div><br>
+                                I started my career as a .NET developer, focusing on designing and developing user-friendly front-end interfaces using HTML, CSS, and JavaScript. My responsibilities include implementing backend logic and ensuring the functionality of systems using the .NET Framework. In addition to programming in experience, and possess skills in basic troubleshooting to resolve technical issues effectively.
+                            </li>
+                            <li>
+                                <h4>Adapdev Solution</h4>
+                                <span>Freelance WordPress Developer</span>
+                                <div class="text-right"><b>August to January 2022</b></div><br>
+                                During my freelancing tenure with Adaptdev Solution, a work-from-home setup, I specialized in designing and creating e-commerce websites using WordPress. Additionally, I developed advertisements for client within the WordPress platform. Communication with clients was effectively managed through Slack, ensuring seamless collaboration and project success.
+                            </li>
+                            <li>
+                                <h4>Adapdev Solution</h4>
+                                <span>Adaptdev Internship</span>
+                                <div class="text-right"><b>March to June 2024</b></div><br>
+                                <p>
+                                    During my internship, I collaborated on various team-based projects also familiar in SDLC, including the development of websites such as e-commerce and shopping platforms. My primary responsibilities involved backend programming using languages such as PHP, JavaScript, and Python. Occasionally, I was assigned frontend development tasks as well. 
+                                </p>
+                                <p>
+                                    Additionally, I was tasked with assisting other interns in troubleshooting system or tool-related issues. Over time, I was appointed as a project leader, where I guided the team and provided support to fellow interns, ensuring the successful completion of projects.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li>
+                                <div class="tab-img"><img src="assets/images/cvsu-logo.png" alt="user"></div>
+                                <span>Bachelor of Science in Information Technology</span>
+                                <div class="text-right"><b>2018 - 2023</b></div><br>
+                                <p>Cavite State university of Cavite City</p>
+                            </li>
+                            <li>
+                                <div class="tab-img"><img src="assets/images/stjoseph-logo.jpg" alt="user"></div>
+                                <span>Science, Technology, Engineering and Mathematics</span>
+                                <div class="text-right"><b>2016 - 2018</b></div><br>
+                                <p>St. Joseph College of Cavite Inc Senior High School</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="others-skills">
+        <div class="container">
+            <h1 class="sub-title">Others Skills</h1>
+            <div class="others-skills-list">
+                <div>
+                    <!-- <i class="fas fa-code"></i> -->
+                    <i class="fa-solid fa-images"></i>
+                    <h2>Photo Editing</h2>
+                    <p>
+                        Able to enhance photo quality, adjust colors, 
+                        and clean up assets/images for better presentation.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Photo Editing" 
+                        data-image="assets/images/photoshop.jpg" 
+                        data-description="I have a basic learning in Photoshop. I can edit photos and remove unnecessary objects based on the client's request.">
+                        Learn more
+                    </a>
+                </div>
+                
+                <div>
+                    <!-- <i class="fas fa-code"></i> -->
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Wireframe Design</h2>
+                    <p>
+                        Can plan page structure and user flow to 
+                        make development more organized and efficient.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Wireframe Design" 
+                        data-image="assets/images/wireframe.jpg" 
+                        data-description="I use wireframes to design the layout of my desired website before development.
+                        &lt;a href='assets/images/wireframe.jpg' style='color:#d11313;'&gt;click here to view the image&lt;/a&gt;">
+                        Learn more
+                    </a>
+                </div>
+
+                <div>
+                    <!-- <i class="fas fa-code"></i> -->
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Video Editing</h2>
+                    <p>
+                        Can produce clean cuts, transitions, 
+                        captions, and simple effects for engaging videos.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Video Editor" 
+                        data-image="assets/Video/EDIT-VID.mp4" 
+                        data-description="This is my sample of introduction video editing I 
+                        have intermediate skills in video editing and have done 
+                        student commissions with good feedback.">
+                        Learn more
+                    </a>
+                </div>
+
+                <div>
+                    <!-- <i class="fas fa-crop-alt"></i> -->
+                    <i class="fa-brands fa-ubuntu"></i>
+                    <h2> Ubuntu </h2>
+                    <p>Able to navigate Linux terminal, install packages, manage 
+                        files, and use Ubuntu/Kali for development and basic 
+                        cybersecurity testing.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Web Design" 
+                        data-image="assets/images/linux.jpg" 
+                        data-description="I am familiar with Ubuntu Linux and use it frequently 
+                        for development. I can install Ubuntu on a fresh laptop, and I am comfortable 
+                        using terminal commands. I also have experience using Kali Linux for sample 
+                        cybersecurity and offensive planning tasks. I often use Ubuntu as my main 
+                        environment when developing programs for my projects.">
+                        Learn more
+                    </a>
+                </div>
+
+                <div>
+                    <!-- <i class="fab fa-app-store"></i> -->
+                    <i class="fa-solid fa-computer"></i>
+                    <h2> Basic Troubleshoot </h2>
+                    <p>
+                        Able to diagnose common issues, reinstall software, and perform basic hardware checks.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Troubleshoot" 
+                        data-image="assets/images/troubleshoot.gif" 
+                        data-description="I can perform simple troubleshooting for computers and software when errors occur.">
+                        Learn more
+                    </a>
+                </div>
+
+                <div>
+                    <!-- <i class="fab fa-app-store"></i> -->
+                    <i class="fa-solid fa-file-lines"></i>
+                    <h2> Microsoft Literate </h2>
+                    <p>
+                        Can create documents, spreadsheets, 
+                        and presentations efficiently and professionally.
+                    </p>
+                    <a href="#" class="learn-more-btn" 
+                        data-title="Web Design" 
+                        data-image="assets/images/MS-1.png" 
+                        data-description="I am confident in Microsoft skills such as Word, Excel, and PowerPoint, which are basic tools in the IT field.">
+                        Learn more
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- skills section start -->
+            
+            <div class="skills">
+                <div class="max-width">
+                    <h2>Web Development Skills</h2>
+                    <div class="skills-content">
+                        <div class="column left">
+                            <div class="skills-img">
+                                <img src="assets/images/programming-2.png" alt="user">
+                            </div>
+                            <div class="text">Web Development Summary</div>
+                            <p> I have experience in both front-end and back-end development, 
+                                enabling me to work effectively as a full-stack developer. I 
+                                adapt quickly to different technologies by studying documentation 
+                                and applying new concepts directly to project requirements. On the 
+                                front end, I design responsive and user-friendly interfaces. On the 
+                                back end, I develop the system’s logic, functions, and data workflows. 
+                                I also manage databases, perform data manipulation, and conduct basic 
+                                MSSQL backup operations. This combination of skills allows me to build 
+                                complete, functional, and efficient web applications.</p>
+                        </div>
+                        <div class="column right">
+                            <div class="bars">
+                                <div class="info">
+                                    <span>HTML</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="line html"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="line css"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>Bootstrap</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="line bootstrap"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="line js"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>MSSQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="line mssql"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>MySQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="line mysql"></div>
+                            </div>
+
+                            <div class="bars">
+                                <div class="info">
+                                    <span>Python</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="line python"></div>
+                            </div>
+
+                            <div class="bars">
+                                <div class="info">
+                                    <span>PHP</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="line php"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End skill -->
+        </div>
+    </div>
+
+    <!-- My Work -->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Test -->
+                <div class="work">
+                    <img src="assets/images/PHP-programmin.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>PHP Programming</h3>
+                        <p>
+                            Experienced with form handling, connecting to 
+                            databases, and writing reusable backend logic.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="PHP Programming" 
+                            data-image="assets/images/PHP-programmin.jpg" 
+                            data-description=" I learned PHP for building web projects and handling backend processes.
+                            This project showcases my PHP programming techniques using Codeigniter, including database management and API integration.">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/Codeigniter.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>CodeIgniter Framework</h3>
+                        <p>
+                            Can create controllers, views, and models, 
+                            and integrate databases within CI environments.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="CodeIgniter Framework 3 & 4" 
+                            data-image="assets/video/ci4.mp4" 
+                            data-description="I am familiar with the CodeIgniter 3 ad 4 in PHP 
+                            framework, which I used for college projects and previous work. 
+                            In the video I create a simple barangay management using CodeIgniter 4 
+                            with proper documentation of my project and code. 
+                            I understand the MVC method in web development. I also have 
+                            a DICT training certificate.">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/Net-Framework.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>.NET Programming</h3>
+                        <p>
+                            Can develop system features, manage forms, 
+                            and connect .NET applications to databases.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title=".Net Framework" 
+                            data-image="assets/video/NET.mp4" 
+                            data-description="One of my specialties. This video is my simple login with CRUD user management application. In my previous job, I created applications and web applications using .NET, improving my understanding and coding ability.">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/Python.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>Python Programming</h3>
+                        <p>
+                            Can write simple automation scripts 
+                            and understand intermediate data processing concepts.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="Python" 
+                            data-image="assets/images/programming.gif" 
+                            data-description="I have a intermediate understanding of Python, usually used in AI and machine learning. 
+                            During my internship, I coded small Python tasks to assist senior programmers on their projects.">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/WordPress.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>WordPress Website</h3>
+                        <p>
+                            Can customize themes, use plugins, design layouts, and manage WordPress site structure.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="WordPress" 
+                            data-image="assets/video/DENR-2.mp4" 
+                            data-description="During my internship and freelance work, I used WordPress to design 
+                            and develop websites, which enhanced my skills. In the video I design and create a simple 
+                            wesbite for ecological environment as for my example WordPress Website">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/nodejs.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>Node JS</h3>
+                        <p>
+                            Able to build server-side logic, create CRUD 
+                            APIs using Express.js, and manage projects using Git.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="Node JS" 
+                            data-image="assets/video/nodejs.mp4" 
+                            data-description="I use Node.js and received training from a backend developer 
+                            course by Bayan Academy last 2024 and received a certificate. Through this training, 
+                            I improved my programming skills by building simple backend features. We used a bit of 
+                            front-end, Git for version control, and Express.js to design a simple CRUD website using Node.js. ">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/ardu.jpg" height="400" alt="work">
+                    <div class="layer">
+                        <h3>Ardruino Uno Project</h3>
+                        <p>
+                            Can program Arduino boards, read circuit diagrams, and 
+                            assemble basic electronic projects tailored to client needs.
+                        </p>
+                        <a href="#" class="infoLink" 
+                            data-title="Ardruino Uno Project" 
+                            data-image="assets/video/ardruino.mp4" 
+                            data-description="I have experience working with Arduino Uno and have 
+                            completed commissioned projects for clients. In the video I currently use Ubuntu Operating system
+                            for the IDE which I use for develop my projects I study and understand 
+                            project blueprints and build Arduino-based systems that meet the client’s requirements. ">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <!-- Slider -->
+            <h1 style="text-align: center; padding-top: 25px;">Sample Projects</h1>
+            <div class="showcase">
+
+                <div class="slider">
+                    <div class="slider-track">
+                        <img src="assets/images/project-img/proj-1.jpg" alt="Image1">
+                        <img src="assets/images/project-img/proj-2.jpg" alt="Image2">
+                        <img src="assets/images/project-img/proj-3.jpg" alt="Image3">
+                        <img src="assets/images/project-img/proj-4.png" alt="Image4">
+
+                        <img src="assets/images/project-img/proj-1.jpg" alt="Image1">
+                        <img src="assets/images/project-img/proj-2.jpg" alt="Image2">
+                        <img src="assets/images/project-img/proj-3.jpg" alt="Image3">
+                        <img src="assets/images/project-img/proj-4.png" alt="Image4">
+                    </div>
+                </div>
+            </div>
+            <!-- Slider -->
+
+
+            <!-- <a href="#" class="btn">See More</a> -->
+
+            <a href="#" class="btn infoLink"
+                data-title="Sample Front End Design" 
+                data-image="assets/Video/DENR-1.mp4" 
+                data-description="
+                This video showcases one of my sample front-end designs, created using 
+                HTML, CSS, JavaScript, and Bootstrap. It demonstrates my ability to build 
+                responsive layouts, apply clean styling, and integrate interactive features 
+                to enhance user experience. ">
+                See More
+            </a>
+        </div>
+    </div>
+
+    <!-- Conctact Form -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> radenbengala@gmail.com</p>
+                    <p><i class="fa-brands fa-github"></i>RadenBengala</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +639757175582</p>
+                    <p><i class="fa-brands fa-linkedin"></i>Raden Rodolfo Bengala</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-solid fa-envelope""></i></a>
+                        <a href="https://github.com/RadenBengala"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-square-phone"></i></a>
+                        <a href="https://www.linkedin.com/in/raden-rodolfo-bengala-65a584244/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+
+                <div class="work">
+                    <img src="assets/images/cmp.gif" height="400" alt="work">
+                    <div class="layer">
+                        <h1>Certifications</h1>
+                        <p>Certificate I received from my previous training and previous achievement I acquired that you can view</p>
+                        <a href="#" class="infoLink" 
+                            data-title="Certificate Acquired" 
+                            data-image="assets/images/certificate.png" 
+                            data-description="Click here to view certificate  &lt;a href='https://drive.google.com/drive/folders/1ifQS4NsjvLEVoFd8YcBvUeFXZyu4myjq' target='_blank' style='color:#4da6ff;'&gt;click here&lt;/a&gt;">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Fugit aut rerum, eveniet harum minima voluptate. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+<!-- Sweet alert cdn -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="assets/js/script.js"></script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
